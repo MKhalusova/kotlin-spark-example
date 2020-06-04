@@ -2,7 +2,7 @@
 import org.jetbrains.spark.api.*
 
 fun main() {
-    val logFile = "/YOUR_SPAwRK_HOME/README.md" // Change to your Spark's path
+    val logFile = "/YOUR_SPARK_HOME/README.md" // Change to your Spark Home path
     withSpark {
         spark.read().textFile(logFile).withCached {
             val numAs = filter { it.contains("a") }.count()
