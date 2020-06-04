@@ -58,7 +58,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>SimpleApp.Kt</mainClass>
+                                    <mainClass>SimpleApp</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
