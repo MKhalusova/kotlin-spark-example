@@ -23,3 +23,11 @@ dependencies {
 compileKotlin {
   kotlinOptions.jvmTarget = '1.8'
 }
+
+shadowJar {
+  dependencies {
+    exclude(dependency {
+      it.moduleGroup == 'org.apache.spark' || it.moduleGroup == "org.scala-lang"
+    })
+  }
+}
