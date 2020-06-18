@@ -17,7 +17,7 @@ dependencies {
   // kotlin spark API
   implementation 'com.github.JetBrains.kotlin-spark-api:kotlin-spark-api:0.1.0'
   // apache spark
-  compileOnly 'org.apache.spark:spark-sql_2.12:3.0.0-preview2'
+  compileOnly 'org.apache.spark:spark-sql_2.12:3.0.0'
 }
 
 compileKotlin {
