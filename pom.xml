@@ -33,7 +33,7 @@
         <dependency> <!-- Kotlin Spark API dependency -->
             <groupId>com.github.JetBrains.kotlin-spark-api</groupId>
             <artifactId>kotlin-spark-api</artifactId>
-            <version>0.3.0</version>
+            <version>0.3.1</version>
         </dependency>
         <dependency> <!-- Spark dependency -->
             <groupId>org.apache.spark</groupId>
