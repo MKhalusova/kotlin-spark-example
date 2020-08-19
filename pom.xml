@@ -13,27 +13,20 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.version>1.3.72</kotlin.version>
+        <kotlin.version>1.4.0</kotlin.version>
         <kotlin.code.style>official</kotlin.code.style>
     </properties>
-
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
-            <version>1.3.72</version>
+            <version>1.4.0</version>
         </dependency>
         <dependency> <!-- Kotlin Spark API dependency -->
-            <groupId>com.github.JetBrains.kotlin-spark-api</groupId>
-            <artifactId>kotlin-spark-api</artifactId>
-            <version>0.3.1</version>
+            <groupId>org.jetbrains.kotlinx.spark</groupId>
+            <artifactId>kotlin-spark-api-3.0.0_2.12</artifactId>
+            <version>1.0.0-preview1</version>
         </dependency>
         <dependency> <!-- Spark dependency -->
             <groupId>org.apache.spark</groupId>
@@ -57,7 +50,7 @@
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include>com.github.JetBrains.kotlin-spark-api:*</include>
+                                    <include>org.jetbrains.kotlinx.spark:*</include>
                                     <include>org.jetbrains.kotlin:* </include>
                                 </includes>
                             </artifactSet>
@@ -69,7 +62,7 @@
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
-                <version>1.3.72</version>
+                <version>1.4.0</version>
                 <configuration>
                     <sourceDirs>src/main/kotlin</sourceDirs>
                     <jvmTarget>1.8</jvmTarget>

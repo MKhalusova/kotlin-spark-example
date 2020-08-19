@@ -1,5 +1,5 @@
 @file:JvmName("SimpleApp")
-import org.jetbrains.spark.api.*
+import org.jetbrains.kotlinx.spark.api.*
 
 fun main() {
     val logFile = "/YOUR_SPARK_HOME/README.md" // Change to your Spark Home path
